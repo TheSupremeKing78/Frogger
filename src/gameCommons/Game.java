@@ -112,7 +112,7 @@ public class Game {
 	public boolean testWin() {
 		Case position = frog.getPosition();
 		if (this.environment.isWinningPosition(position)) {
-			this.graphic.endGameScreen("Congratulation :) !!!");
+			this.graphic.endGameScreen("Congratulation :) !!!\n Your time : " + (int)comp + "s" );
 			return true;
 		}
 		return false;
